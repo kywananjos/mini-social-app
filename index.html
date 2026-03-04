@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Social</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <h1>Mini Social</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="post">
+            <div class="post-header">
+                <img src="assets/avatar.png" alt="Avatar" class="avatar">
+                <span class="username">Juliano</span>
+            </div>
+
+            <p class="post-text">
+                Estudando algoritmo, decisão e repetição em JavaScript!
+            </p>
+
+            <div class="post-actions">
+                <button onclick="curtir()">Curtir</button>
+                <span id="contador-curtidas">0 curtidas</span>
+            </div>
+        </section>
+
+        <section class="comments">
+            <h3>Comentários</h3>
+            <input id="comentario" placeholder="Escreva um comentário">
+            <button onclick="adicionarComentario()">Enviar</button>
+            <ul id="lista-comentarios"></ul>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
